@@ -23,6 +23,23 @@
       top: 0;
       z-index: 1000;
     }
+   
+.resume-link {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(229,46,113,0.18);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.resume-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(229,46,113,0.25);
+}
+
 
     header h1 {
       font-size: 1.8rem;
@@ -144,6 +161,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+       <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">📄 View Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
