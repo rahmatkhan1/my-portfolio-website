@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahmat Khan | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(20, 20, 20, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff8a00;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+    }
+
+    .hero .content {
+      max-width: 600px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .role {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    .photo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 80px 10%;
+      background: rgba(20, 20, 20, 0.95);
+      margin: 40px auto;
+      border-radius: 20px;
+      max-width: 1200px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff8a00;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      background: #111;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact a {
+      color: #ff8a00;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Rahmat Khan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h2>Hi, I'm Rahmat 👋</h2>
+      <div class="role">Software Developer | DevOps Engineer</div>
+      <p>I build scalable applications and automate workflows with modern DevOps practices. Passionate about Cloud, CI/CD, and Containers.</p>
+    </div>
+    <div class="photo">
+      <img src="Rahmatround.jpg" alt="Your Photo">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a technology enthusiast with experience in software development and DevOps. I enjoy solving complex problems, building automation pipelines, and deploying cloud-native applications. My focus is on creating efficient solutions that bring value to users and businesses.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Development</h3>
+        <p>HTML, CSS, JavaScript, Python, Node.js</p>
+      </div>
+      <div class="card">
+        <h3>DevOps</h3>
+        <p>Linux, Docker, Kubernetes, Ansible, Terraform</p>
+      </div>
+      <div class="card">
+        <h3>Cloud</h3>
+        <p>AWS, Azure, GCP</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio website showcasing my work and skills.</p>
+      </div>
+      <div class="card">
+        <h3>CI/CD Pipeline</h3>
+        <p>Automated build and deploy pipeline using GitHub Actions and Docker.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Deployment</h3>
+        <p>Deployed microservices on Kubernetes with monitoring and scaling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+     
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Software Developer | Digital Logistics Company</h3>
+      <p>Worked on backend systems, optimized processes, and collaborated with the DevOps team to improve CI/CD workflows.</p>
+    </div>
+
+    <div class="card">
+      <h3>Full Stack Web Developer | Freelance</h3>
+      <p>Developed responsive web applications using HTML, CSS, JavaScript, and backend APIs. Integrated cloud and DevOps practices for smooth deployment and scalability.</p>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to connect with me:</p>
+    <div class="contact">
+      <a href="mailto:rahmat@example.com">📧 rahmat@example.com</a>
+      <a href="https://github.com/rahmat">💻 GitHub</a>
+      <a href="https://linkedin.com/in/rahmat">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Rahmat Khan. All rights reserved.
+  </footer>
+</body>
+</html>
